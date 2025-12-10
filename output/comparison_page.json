@@ -1,0 +1,94 @@
+{
+  "template": "comparison_v1",
+  "title": "GlowBoost Vitamin C Serum vs LuminaVita C-Boost Serum",
+  "products": [
+    {
+      "id": "A",
+      "name": "GlowBoost Vitamin C Serum",
+      "price": "€69",
+      "concentration": "10% Vitamin C",
+      "ingredients": [
+        "Vitamin C",
+        "Hyaluronic Acid"
+      ],
+      "benefits": [
+        "Brightening",
+        "Fades dark spots"
+      ],
+      "skin_types": [
+        "Oily",
+        "Combination"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "LuminaVita C-Boost Serum",
+      "price": "$49.99",
+      "concentration": "12% Vitamin C",
+      "ingredients": [
+        "Vitamin C",
+        "Niacinamide",
+        "Glycerin"
+      ],
+      "benefits": [
+        "Hydrating",
+        "Brightening",
+        "Reduces fine lines"
+      ],
+      "skin_types": [
+        "Normal",
+        "Combination",
+        "Dry"
+      ]
+    }
+  ],
+  "comparison": {
+    "price": {
+      "winner": "LuminaVita C-Boost Serum",
+      "difference": "€19.01",
+      "analysis": "LuminaVita C-Boost Serum is significantly cheaper than GlowBoost Vitamin C Serum"
+    },
+    "ingredients": {
+      "common": [
+        "Vitamin C"
+      ],
+      "unique_to_a": [
+        "Hyaluronic Acid"
+      ],
+      "unique_to_b": [
+        "Niacinamide",
+        "Glycerin"
+      ]
+    },
+    "benefits": {
+      "common": [
+        "Brightening"
+      ],
+      "unique_to_a": [
+        "Fades dark spots"
+      ],
+      "unique_to_b": [
+        "Hydrating",
+        "Reduces fine lines"
+      ]
+    },
+    "skin_types": {
+      "product_a": [
+        "Oily",
+        "Combination"
+      ],
+      "product_b": [
+        "Normal",
+        "Combination",
+        "Dry"
+      ]
+    }
+  },
+  "recommendation": {
+    "budget_conscious": "LuminaVita C-Boost Serum",
+    "analysis": "LuminaVita C-Boost Serum offers better value for money, with a higher concentration of Vitamin C and a lower price point"
+  },
+  "metadata": {
+    "generated_at": "2025-12-09T18:41:28.260479"
+  }
+}

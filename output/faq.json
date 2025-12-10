@@ -1,0 +1,104 @@
+{
+  "template": "faq_v1",
+  "product_name": "GlowBoost Vitamin C Serum",
+  "sections": [
+    {
+      "category": "Informational",
+      "questions": [
+        {
+          "q": "What is the concentration of Vitamin C in the GlowBoost Vitamin C Serum?",
+          "a": "The concentration of Vitamin C in the GlowBoost Vitamin C Serum is 10%."
+        },
+        {
+          "q": "What skin types is the GlowBoost Vitamin C Serum suitable for?",
+          "a": "The GlowBoost Vitamin C Serum is suitable for Oily and Combination skin types."
+        },
+        {
+          "q": "What are the key ingredients in the GlowBoost Vitamin C Serum?",
+          "a": "The key ingredients in the GlowBoost Vitamin C Serum are Vitamin C and Hyaluronic Acid."
+        }
+      ]
+    },
+    {
+      "category": "Safety",
+      "questions": [
+        {
+          "q": "Are there any side effects of using the GlowBoost Vitamin C Serum?",
+          "a": "Mild tingling may occur for sensitive skin."
+        },
+        {
+          "q": "Can I use the GlowBoost Vitamin C Serum if I have sensitive skin?",
+          "a": "Yes, but you may experience mild tingling."
+        },
+        {
+          "q": "Will the GlowBoost Vitamin C Serum cause any irritation to my skin?",
+          "a": "It may cause mild tingling for sensitive skin."
+        }
+      ]
+    },
+    {
+      "category": "Usage",
+      "questions": [
+        {
+          "q": "How do I apply the GlowBoost Vitamin C Serum?",
+          "a": "Apply 2–3 drops in the morning before sunscreen."
+        },
+        {
+          "q": "When should I apply the GlowBoost Vitamin C Serum, morning or night?",
+          "a": "Apply in the morning before sunscreen."
+        },
+        {
+          "q": "How many drops of the GlowBoost Vitamin C Serum should I use each time?",
+          "a": "Use 2–3 drops each time."
+        }
+      ]
+    },
+    {
+      "category": "Purchase",
+      "questions": [
+        {
+          "q": "How much does the GlowBoost Vitamin C Serum cost?",
+          "a": "The GlowBoost Vitamin C Serum costs €69."
+        },
+        {
+          "q": "Is the GlowBoost Vitamin C Serum worth the price?",
+          "a": "No information available."
+        },
+        {
+          "q": "Where can I buy the GlowBoost Vitamin C Serum?",
+          "a": "No information available."
+        }
+      ]
+    },
+    {
+      "category": "Comparison",
+      "questions": [
+        {
+          "q": "How does the GlowBoost Vitamin C Serum compare to other Vitamin C serums on the market?",
+          "a": "No information available."
+        },
+        {
+          "q": "What are the benefits of using the GlowBoost Vitamin C Serum over other skincare products?",
+          "a": "No information available."
+        }
+      ]
+    },
+    {
+      "category": "Benefits",
+      "questions": [
+        {
+          "q": "What are the benefits of using the GlowBoost Vitamin C Serum?",
+          "a": "The benefits of using the GlowBoost Vitamin C Serum include Brightening and fading dark spots."
+        },
+        {
+          "q": "Will the GlowBoost Vitamin C Serum help to fade dark spots on my skin?",
+          "a": "Yes, it helps to fade dark spots."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "generated_at": "2025-12-09T18:41:29.788469",
+    "question_count": 17
+  }
+}
