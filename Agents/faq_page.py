@@ -15,38 +15,49 @@ class FAQPageAgent:
         """Build FAQ page using structured output"""
         
         product = state["product_model"]
-        questions = state["questions"]
+        questions_data = state["questions"]
         
-        prompt = f"""Create a comprehensive FAQ page with MINIMUM 5 Q&A pairs.
+        total_questions = questions_data["total_count"]
+        questions_list = questions_data["questions"]
 
-            Product:
+        system_prompt = f"""You are the FAQ Page Builder Agent.
+
+            Your ONLY job is to create a structured FAQ page using **ALL {total_questions} questions** provided below.
+
+            RULES — FOLLOW EXACTLY:
+            - Use **every single question** from the list. Do not skip, summarize, filter, or discard any.
+            - You MUST output exactly {total_questions} Q&A pairs — no more, no less.
+            - Group questions by their original 'category' field.
+            - Write clear, accurate, friendly answers based ONLY on the provided product data.
+            - Do not add new questions.
+            - Do not remove or rephrase existing questions.
+            - Set metadata.question_count = {total_questions}
+            - Set metadata.generated_at = current ISO timestamp (you can leave placeholder, it will be overwritten)
+
+            This is a strict data preservation step. Losing questions = pipeline failure.
+        """
+
+        human_prompt = f"""Product Data:
             {json.dumps(product, indent=2)}
 
-            Available Questions:
-            {json.dumps(questions, indent=2)}
+            All {total_questions} Questions (use every one):
+            {json.dumps(questions_list, indent=2)}
 
-            Instructions:
-            1. Group questions by category
-            2. Write clear, helpful answers based ONLY on product data
-            3. Create at least 5 Q&A pairs (you can add more if relevant)
-            4. Set generated_at to current ISO timestamp
-            5. Count total questions in metadata
-
-            Do not invent facts not in the product data.
-
-            Use proper JSON formatting:
-            - Use " for strings (not \")
-            - Don't escape single quotes (use ' not \')
+            Now build the FAQ page with exactly {total_questions} Q&A pairs.
         """
-        
+
+        messages = [
+            ("system", system_prompt),
+            ("human", human_prompt)
+        ]
+
         # Returns FAQPage instance
-        faq: FAQPage = self.structured_llm.invoke(prompt)
+        faq: FAQPage = self.structured_llm.invoke(messages)
         
         # Set timestamp
         faq.metadata.generated_at = datetime.utcnow().isoformat()
         
         faq_page= faq.model_dump()
-        # logs = state["logs"].append(f"[{self.name}] Built FAQ page with {faq.metadata.question_count} questions")
         
         return {
             "faq_page":faq_page,

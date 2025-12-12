@@ -25,7 +25,7 @@ class ProductPageAgent:
             {json.dumps(blocks, indent=2)}
 
             Instructions:
-            1. Create hero section with product name, compelling tagline, and formatted price
+            1. Create Product Model with product name, compelling tagline, and formatted price
             2. Build overview from product data
             3. Use benefits from benefits_block
             4. Use ingredients from ingredients_block
@@ -43,7 +43,6 @@ class ProductPageAgent:
         product_page.metadata.generated_at = datetime.utcnow().isoformat()
         
         product_page = product_page.model_dump()
-        # logs = state["logs"].append(f"[{self.name}] Built product page")
         
         return {
             "product_page":product_page,

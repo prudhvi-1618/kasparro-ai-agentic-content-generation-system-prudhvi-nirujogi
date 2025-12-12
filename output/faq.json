@@ -11,11 +11,28 @@
         },
         {
           "q": "What skin types is the GlowBoost Vitamin C Serum suitable for?",
-          "a": "The GlowBoost Vitamin C Serum is suitable for Oily and Combination skin types."
+          "a": "The GlowBoost Vitamin C Serum is suitable for oily and combination skin types."
         },
         {
           "q": "What are the key ingredients in the GlowBoost Vitamin C Serum?",
           "a": "The key ingredients in the GlowBoost Vitamin C Serum are Vitamin C and Hyaluronic Acid."
+        }
+      ]
+    },
+    {
+      "category": "Usage",
+      "questions": [
+        {
+          "q": "How do I apply the GlowBoost Vitamin C Serum?",
+          "a": "Apply 2–3 drops of the GlowBoost Vitamin C Serum in the morning before sunscreen."
+        },
+        {
+          "q": "Can I use the GlowBoost Vitamin C Serum at night?",
+          "a": "The product data recommends applying the GlowBoost Vitamin C Serum in the morning, but it does not explicitly state that it cannot be used at night. However, it's generally recommended to use Vitamin C serums during the day for optimal brightening and antioxidant benefits."
+        },
+        {
+          "q": "Do I need to use a moisturizer after applying the GlowBoost Vitamin C Serum?",
+          "a": "While the GlowBoost Vitamin C Serum contains Hyaluronic Acid, which has moisturizing properties, it's still recommended to follow up with a moisturizer to help lock in the serum's benefits and provide additional hydration."
         }
       ]
     },
@@ -28,28 +45,11 @@
         },
         {
           "q": "Can I use the GlowBoost Vitamin C Serum if I have sensitive skin?",
-          "a": "Yes, but you may experience mild tingling."
+          "a": "If you have sensitive skin, start with a small patch test to ensure you don't have any adverse reactions to the GlowBoost Vitamin C Serum."
         },
         {
-          "q": "Will the GlowBoost Vitamin C Serum cause any irritation to my skin?",
-          "a": "It may cause mild tingling for sensitive skin."
-        }
-      ]
-    },
-    {
-      "category": "Usage",
-      "questions": [
-        {
-          "q": "How do I apply the GlowBoost Vitamin C Serum?",
-          "a": "Apply 2–3 drops in the morning before sunscreen."
-        },
-        {
-          "q": "When should I apply the GlowBoost Vitamin C Serum, morning or night?",
-          "a": "Apply in the morning before sunscreen."
-        },
-        {
-          "q": "How many drops of the GlowBoost Vitamin C Serum should I use each time?",
-          "a": "Use 2–3 drops each time."
+          "q": "Will the GlowBoost Vitamin C Serum cause any irritation?",
+          "a": "The GlowBoost Vitamin C Serum is formulated to be gentle, but as with any new skincare product, there's a small chance of irritation. If you experience any redness, itching, or burning, discontinue use and consult with a dermatologist."
         }
       ]
     },
@@ -58,15 +58,15 @@
       "questions": [
         {
           "q": "How much does the GlowBoost Vitamin C Serum cost?",
-          "a": "The GlowBoost Vitamin C Serum costs €69."
+          "a": "The GlowBoost Vitamin C Serum costs €699."
         },
         {
-          "q": "Is the GlowBoost Vitamin C Serum worth the price?",
-          "a": "No information available."
+          "q": "Is the GlowBoost Vitamin C Serum available for purchase online?",
+          "a": "The product data does not specify whether the GlowBoost Vitamin C Serum is available for purchase online, but it's likely available through various online retailers or the manufacturer's website."
         },
         {
-          "q": "Where can I buy the GlowBoost Vitamin C Serum?",
-          "a": "No information available."
+          "q": "Can I return the GlowBoost Vitamin C Serum if I'm not satisfied?",
+          "a": "The return policy for the GlowBoost Vitamin C Serum is not specified in the product data, but you can check with the retailer or manufacturer for their return and refund policies."
         }
       ]
     },
@@ -75,11 +75,11 @@
       "questions": [
         {
           "q": "How does the GlowBoost Vitamin C Serum compare to other Vitamin C serums on the market?",
-          "a": "No information available."
+          "a": "The GlowBoost Vitamin C Serum has a 10% concentration of Vitamin C, which is a relatively standard concentration for Vitamin C serums. Its effectiveness compared to other products would depend on individual skin types and concerns."
         },
         {
-          "q": "What are the benefits of using the GlowBoost Vitamin C Serum over other skincare products?",
-          "a": "No information available."
+          "q": "Is the GlowBoost Vitamin C Serum more effective than other brightening products?",
+          "a": "The GlowBoost Vitamin C Serum contains Vitamin C, which is known for its brightening properties. However, the effectiveness of the GlowBoost Vitamin C Serum compared to other brightening products would depend on individual skin types and concerns."
         }
       ]
     },
@@ -88,17 +88,21 @@
       "questions": [
         {
           "q": "What are the benefits of using the GlowBoost Vitamin C Serum?",
-          "a": "The benefits of using the GlowBoost Vitamin C Serum include Brightening and fading dark spots."
+          "a": "The benefits of using the GlowBoost Vitamin C Serum include brightening and fading dark spots."
         },
         {
-          "q": "Will the GlowBoost Vitamin C Serum help to fade dark spots on my skin?",
-          "a": "Yes, it helps to fade dark spots."
+          "q": "Will the GlowBoost Vitamin C Serum help to fade dark spots?",
+          "a": "Yes, the GlowBoost Vitamin C Serum can help to fade dark spots due to its Vitamin C content, which has been shown to have a brightening effect on the skin."
         }
       ]
+    },
+    {
+      "category": "General",
+      "questions": []
     }
   ],
   "metadata": {
-    "generated_at": "2025-12-09T18:41:29.788469",
+    "generated_at": "2025-12-12T15:10:23.647276",
     "question_count": 17
   }
 }

@@ -33,7 +33,6 @@ class ContentBlockAgent:
         blocks: ContentBlocks = self.structured_llm.invoke(prompt)
         
         content_blocks = blocks.model_dump()
-        # logs = state["logs"].append(f"[{self.name}] Generated 5 content blocks")
         
         return {
             "content_blocks": content_blocks,

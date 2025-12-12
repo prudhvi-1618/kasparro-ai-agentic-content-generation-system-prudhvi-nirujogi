@@ -37,7 +37,6 @@ class ProductBGeneratorAgent:
         product_b: Product = self.structured_llm.invoke(prompt)
         
         product_b_model = product_b.model_dump()
-        # state["logs"].append(f"[{self.name}] Generated fictional Product B: {product_b.name}")
         
         return {
             "product_b_model":product_b_model,

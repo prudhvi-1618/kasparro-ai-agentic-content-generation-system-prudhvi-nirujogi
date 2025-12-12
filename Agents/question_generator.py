@@ -35,7 +35,6 @@ class QuestionGeneratorAgent:
         questions_output: QuestionsOutput = self.structured_llm.invoke(prompt)
         
         questions = questions_output.model_dump()
-        logs = state["logs"].append(f"[{self.name}] Generated {questions_output.total_count} questions")
         
         return {
             "questions":questions,

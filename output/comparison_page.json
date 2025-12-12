@@ -1,16 +1,12 @@
 {
   "template": "comparison_v1",
-  "title": "GlowBoost Vitamin C Serum vs LuminaVita C-Boost Serum",
+  "title": "Product Comparison",
   "products": [
     {
-      "id": "A",
       "name": "GlowBoost Vitamin C Serum",
-      "price": "€69",
+      "price": 699.0,
       "concentration": "10% Vitamin C",
-      "ingredients": [
-        "Vitamin C",
-        "Hyaluronic Acid"
-      ],
+      "ingredients": [],
       "benefits": [
         "Brightening",
         "Fades dark spots"
@@ -21,44 +17,32 @@
       ]
     },
     {
-      "id": "B",
-      "name": "LuminaVita C-Boost Serum",
-      "price": "$49.99",
+      "name": "LuminaPro C-Boost Serum",
+      "price": 899.0,
       "concentration": "12% Vitamin C",
-      "ingredients": [
-        "Vitamin C",
-        "Niacinamide",
-        "Glycerin"
-      ],
+      "ingredients": [],
       "benefits": [
-        "Hydrating",
         "Brightening",
-        "Reduces fine lines"
+        "Hydrating",
+        "Fades fine lines"
       ],
       "skin_types": [
         "Normal",
-        "Combination",
+        "Oily",
         "Dry"
       ]
     }
   ],
   "comparison": {
     "price": {
-      "winner": "LuminaVita C-Boost Serum",
-      "difference": "€19.01",
-      "analysis": "LuminaVita C-Boost Serum is significantly cheaper than GlowBoost Vitamin C Serum"
+      "winner": "GlowBoost Vitamin C Serum",
+      "difference": 200.0,
+      "analysis": "GlowBoost Vitamin C Serum is ₹200.0 less expensive than the other product (₹699.0 vs ₹899.0)."
     },
     "ingredients": {
-      "common": [
-        "Vitamin C"
-      ],
-      "unique_to_a": [
-        "Hyaluronic Acid"
-      ],
-      "unique_to_b": [
-        "Niacinamide",
-        "Glycerin"
-      ]
+      "common": [],
+      "unique_to_a": [],
+      "unique_to_b": []
     },
     "benefits": {
       "common": [
@@ -68,8 +52,8 @@
         "Fades dark spots"
       ],
       "unique_to_b": [
-        "Hydrating",
-        "Reduces fine lines"
+        "Fades fine lines",
+        "Hydrating"
       ]
     },
     "skin_types": {
@@ -79,16 +63,16 @@
       ],
       "product_b": [
         "Normal",
-        "Combination",
+        "Oily",
         "Dry"
       ]
     }
   },
   "recommendation": {
-    "budget_conscious": "LuminaVita C-Boost Serum",
-    "analysis": "LuminaVita C-Boost Serum offers better value for money, with a higher concentration of Vitamin C and a lower price point"
+    "budget_conscious": "GlowBoost Vitamin C Serum",
+    "analysis": "Both products offer effective formulations. Choose based on your skin type and budget."
   },
   "metadata": {
-    "generated_at": "2025-12-09T18:41:28.260479"
+    "generated_at": "2025-12-12T15:10:21.324207"
   }
 }

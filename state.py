@@ -15,6 +15,13 @@ class AgentState(TypedDict):
     questions: Dict[str, Any]
     content_blocks: Annotated[dict, lambda x, y: {**x, **y}]
     
+    # Granular content blocks
+    benefits_block: Dict[str, Any]
+    usage_block: Dict[str, Any]
+    ingredients_block: Dict[str, Any]
+    safety_block: Dict[str, Any]
+    overview_block: Dict[str, Any]
+
     # Final outputs
     faq_page: Dict[str, Any]
     product_page: Dict[str, Any]

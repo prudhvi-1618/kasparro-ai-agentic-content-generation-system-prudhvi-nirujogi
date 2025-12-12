@@ -1,6 +1,21 @@
 from pydantic import BaseModel,Field
 from typing_extensions import List
 
+class PriceInfo(BaseModel):
+    """Price information"""
+    amount: float = Field(..., description="Price amount")
+    currency: str = Field(default="INR", description="Currency code")
+    display: str = Field(..., description="Formatted price display")
+
+    @property
+    def formatted(self) -> str:
+        # Auto-format based on currency
+        if self.currency == "INR":
+            return f"₹{int(self.amount):,}"
+        elif self.currency == "USD":
+            return f"${self.amount:,.2f}"
+        return f"{self.amount} {self.currency}"
+    
 class Product(BaseModel):
     """Structured product model with validation"""
     name: str = Field(..., description="Product name")
@@ -10,7 +25,7 @@ class Product(BaseModel):
     benefits: List[str] = Field(..., description="Product benefits")
     how_to_use: str = Field(..., description="How to use the product")
     side_effects: str = Field(..., description="Safety warnings and side effects")
-    price: str = Field(...,  description="Product price including the currency symbol (e.g., ₹699, $29.99, €15).")
+    price: PriceInfo = Field(...,  description="Product price including the currency symbol (e.g., ₹699, $29.99, €15).")
 
 
 class Question(BaseModel):
@@ -115,14 +130,6 @@ class FAQPage(BaseModel):
     sections: List[FAQSection] = Field(..., description="FAQ sections")
     metadata: FAQMetadata = Field(..., description="Page metadata")
 
-
-class PriceInfo(BaseModel):
-    """Price information"""
-    amount: str = Field(..., description="Price amount")
-    currency: str = Field(default="INR", description="Currency code")
-    display: str = Field(..., description="Formatted price display")
-
-
 class ProductHero(BaseModel):
     """Product page hero section"""
     product_name: str = Field(..., description="Product name")
@@ -139,7 +146,6 @@ class ProductOverview(BaseModel):
 
 class ProductPageMetadata(BaseModel):
     """Product page metadata"""
-    # product_id: str = Field(..., description="Product ID")
     generated_at: str = Field(..., description="Generation timestamp")
 
 
@@ -157,9 +163,8 @@ class ProductPage(BaseModel):
 
 class ComparisonProduct(BaseModel):
     """Product in comparison"""
-    id: str
     name: str
-    price: str
+    price: float
     concentration: str
     ingredients: List[str]
     benefits: List[str]
@@ -169,7 +174,7 @@ class ComparisonProduct(BaseModel):
 class PriceComparison(BaseModel):
     """Price comparison analysis"""
     winner: str = Field(..., description="Product with better price")
-    difference: str = Field(..., description="Price difference")
+    difference: float = Field(..., description="Price difference")
     analysis: str = Field(..., description="Price comparison text")
 
 

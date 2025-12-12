@@ -3,7 +3,6 @@ from ..state import AgentState
 from ..model.schema import Product
 import json
 
-# AGENT 1: DATA PARSER AGENT
 class DataParserAgent:
     """Agent with structured output using Pydantic"""
     
@@ -23,9 +22,9 @@ class DataParserAgent:
             {json.dumps(state['raw_product_data'], indent=2)}
 
             Instructions:
-            2. Normalize all fields
-            3. Parse comma-separated values into lists
-            4. Extract price value with it's currency symbol
+            1. Normalize all fields
+            2. Parse comma-separated values into lists
+            3. Extract price value with it's currency symbol
         """
         
         # Invoke structured LLM - returns ProductModel instance
@@ -33,7 +32,6 @@ class DataParserAgent:
 
         # Convert to dict for state
         product_model = product_model.model_dump()
-        # logs=state["logs"].append(f"[{self.name}] Parsed product data successfully")
         
         return {
             "product_model":product_model,
