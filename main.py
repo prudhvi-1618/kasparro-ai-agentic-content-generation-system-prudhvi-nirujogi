@@ -8,7 +8,6 @@ from typing_extensions import Dict,Any
 from .Agents.data_parser import DataParserAgent
 from .Agents.question_generator import QuestionGeneratorAgent
 from .Agents.faq_page import FAQPageAgent
-from .Agents.content_block import ContentBlockAgent
 from .Agents.product_page import ProductPageAgent
 from .Agents.productb_generator import ProductBGeneratorAgent
 from .Agents.comparison_page import ComparisonPageAgent
@@ -39,7 +38,6 @@ class ContentGeneration:
         # Initialize all agents
         self.data_parser = DataParserAgent(self.llm)
         self.question_generator = QuestionGeneratorAgent(self.llm)
-        self.content_block_agent = ContentBlockAgent(self.llm)
         self.product_b_generator = ProductBGeneratorAgent(self.llm)
 
         self.benefits_agent = BenefitsBlockAgent(self.llm)
@@ -69,7 +67,6 @@ class ContentGeneration:
         workflow.add_node("parse_data_checkpoint", checkpoint)
 
         workflow.add_node("generate_questions", self.question_generator.generate)
-        workflow.add_node("generate_content_blocks", self.content_block_agent.generate_blocks)
         workflow.add_node("generate_product_b", self.product_b_generator.generate)
 
         workflow.add_node("generate_benefits", self.benefits_agent.generate)

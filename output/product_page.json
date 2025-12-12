@@ -2,72 +2,68 @@
   "template": "product_page_v1",
   "hero": {
     "product_name": "GlowBoost Vitamin C Serum",
-    "tagline": "Unlock your natural glow with our potent Vitamin C serum",
+    "tagline": "Unlock radiant glow with GlowBoost Vitamin C Serum, for brighter, smoother skin",
     "price": {
       "amount": 699.0,
-      "currency": "EUR",
-      "display": "€699"
+      "currency": "INR",
+      "display": "₹699"
     }
   },
   "overview": {
-    "description": "GlowBoost Vitamin C Serum is a powerful antioxidant serum that brightens and evens out your skin tone, reducing the appearance of dark spots and hyperpigmentation.",
+    "description": "GlowBoost Vitamin C Serum is a powerful antioxidant that brightens and evens out skin tone, reducing dark spots and hyperpigmentation, revealing a smoother, more radiant complexion.",
     "skin_types": [
       "Oily",
       "Combination"
     ],
-    "category": "Skincare"
+    "category": "Serum"
   },
   "benefits": [
     {
       "benefit": "Brightening",
-      "description": "GlowBoost Vitamin C Serum helps to brighten your complexion, giving you a more even and radiant skin tone."
+      "description": "The GlowBoost Vitamin C Serum achieves brightening by utilizing the powerful antioxidant properties of vitamin C to reduce the appearance of dull skin and even out skin tone."
     },
     {
       "benefit": "Fades dark spots",
-      "description": "The serum's powerful antioxidant properties help to reduce the appearance of dark spots and hyperpigmentation, leaving your skin looking smoother and more even."
+      "description": "The GlowBoost Vitamin C Serum fades dark spots by inhibiting the production of melanin, the pigment responsible for dark spots, and promoting a more even skin tone through its high concentration of vitamin C."
     }
   ],
   "ingredients": {
     "block_type": "ingredients",
-    "primary": "Vitamin C",
-    "supporting": [
-      "Hyaluronic Acid"
-    ],
+    "primary": "10% Vitamin C",
+    "supporting": [],
     "details": [
       {
         "name": "Vitamin C",
-        "purpose": "Antioxidant and brightening properties"
-      },
-      {
-        "name": "Hyaluronic Acid",
-        "purpose": "Hydrating and moisturizing properties"
+        "purpose": "Primary active ingredient"
       }
     ]
   },
   "usage": {
     "block_type": "usage",
-    "instructions": "Apply 2-3 drops of GlowBoost Vitamin C Serum in the morning before sunscreen for optimal results.",
+    "instructions": "To get the most out of this product, follow these simple steps",
     "steps": [
-      "Cleanse your face",
-      "Apply toner",
-      "Apply 2-3 drops of GlowBoost Vitamin C Serum",
-      "Follow up with moisturizer and sunscreen"
+      "Step 1: Read the manual",
+      "Step 2: Assemble the parts",
+      "Step 3: Plug it in",
+      "Step 4: Turn it on",
+      "Step 5: Enjoy the benefits"
     ],
-    "frequency": "Daily"
+    "frequency": "daily"
   },
   "safety": {
     "block_type": "safety",
-    "warnings": "Mild tingling may occur for sensitive skin. If irritation persists, discontinue use.",
+    "warnings": "Warnings: Product may cause skin irritation in some individuals. Discontinue use if irritation occurs.",
     "suitable_for": [
       "Oily",
       "Combination"
     ],
     "precautions": [
       "Avoid contact with eyes",
-      "Patch test before using"
+      "Use as directed",
+      "Patch test before use"
     ]
   },
   "metadata": {
-    "generated_at": "2025-12-12T15:10:22.909133"
+    "generated_at": "2025-12-12T16:16:09.061438"
   }
 }

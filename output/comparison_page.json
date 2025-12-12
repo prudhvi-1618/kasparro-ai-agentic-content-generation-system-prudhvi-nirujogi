@@ -17,18 +17,18 @@
       ]
     },
     {
-      "name": "LuminaPro C-Boost Serum",
-      "price": 899.0,
+      "name": "RadianceRevive Serum",
+      "price": 999.0,
       "concentration": "12% Vitamin C",
       "ingredients": [],
       "benefits": [
-        "Brightening",
         "Hydrating",
-        "Fades fine lines"
+        "Brightening",
+        "Reduces fine lines"
       ],
       "skin_types": [
         "Normal",
-        "Oily",
+        "Combination",
         "Dry"
       ]
     }
@@ -36,8 +36,8 @@
   "comparison": {
     "price": {
       "winner": "GlowBoost Vitamin C Serum",
-      "difference": 200.0,
-      "analysis": "GlowBoost Vitamin C Serum is ₹200.0 less expensive than the other product (₹699.0 vs ₹899.0)."
+      "difference": 300.0,
+      "analysis": "GlowBoost Vitamin C Serum is ₹300.0 less expensive than the other product (₹699.0 vs ₹999.0)."
     },
     "ingredients": {
       "common": [],
@@ -52,8 +52,8 @@
         "Fades dark spots"
       ],
       "unique_to_b": [
-        "Fades fine lines",
-        "Hydrating"
+        "Hydrating",
+        "Reduces fine lines"
       ]
     },
     "skin_types": {
@@ -63,7 +63,7 @@
       ],
       "product_b": [
         "Normal",
-        "Oily",
+        "Combination",
         "Dry"
       ]
     }
@@ -73,6 +73,6 @@
     "analysis": "Both products offer effective formulations. Choose based on your skin type and budget."
   },
   "metadata": {
-    "generated_at": "2025-12-12T15:10:21.324207"
+    "generated_at": "2025-12-12T16:16:07.598553"
   }
 }
